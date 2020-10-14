@@ -22,7 +22,7 @@ pipeline
                   export AWS_ACCESS_KEY_ID=$(jq -r '.Credentials.AccessKeyId' assume-role-output.json)
                   export AWS_SECRET_ACCESS_KEY=$(jq -r '.Credentials.SecretAccessKey' assume-role-output.json)
                   export AWS_SESSION_TOKEN=$(jq -r '.Credentials.SessionToken' assume-role-output.json)
-                  aws s3 cp index.html s3://sdlc-toolchain-qa/demo/qa
+                  aws s3 cp index.html s3://sdlc-toolchain-qa/demo/qa/index.html
 				  unset AWS_ACCESS_KEY_ID
                   unset AWS_SECRET_ACCESS_KEY
                   unset AWS_SESSION_TOKEN
